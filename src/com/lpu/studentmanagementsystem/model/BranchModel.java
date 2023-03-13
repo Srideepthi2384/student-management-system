@@ -14,6 +14,7 @@ public class BranchModel {
 
 	public BranchModel(String name, List<SectionModel> sections) {
 		super();
+		int x;
 		this.name = name;
 		this.sections = sections;
 	}
