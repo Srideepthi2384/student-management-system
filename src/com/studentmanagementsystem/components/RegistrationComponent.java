@@ -69,7 +69,7 @@ public class RegistrationComponent extends JPanel {
 
 		registrationPanel = new JPanel();
 		registrationPanel.setBackground(Color.LIGHT_GRAY);
-		registrationPanel.setBounds(10, 80, 465, 600);
+		registrationPanel.setBounds(10, 55, 430, 600);
 		add(registrationPanel);
 		GridBagLayout gbl_registrationPanel = new GridBagLayout();
 		gbl_registrationPanel.columnWidths = new int[] { 0, 0, 0, 0, 0, 0 };
