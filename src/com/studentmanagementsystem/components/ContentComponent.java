@@ -27,10 +27,14 @@ public class ContentComponent extends JPanel {
 		
 		RegistrationComponent.getInstance().setBounds(this.getWidth()/2-250, 0, 500, 650);
 		
+		StudentDetailsComponent.getInstance().setBounds(this.getWidth()/2-250, 0, 500, 650);
+		
 	}
 	
 	public void addComponent(String name) {
 		this.removeAll();
+		this.revalidate();
+		this.repaint();
 		switch(name) {
 		case "login":
 			this.add(loginComponent.getInstance());
@@ -38,10 +42,10 @@ public class ContentComponent extends JPanel {
 		case "registration":
 			this.add(registrationComponent.getInstance());
 			break;
-		case "details":
+		case "studentDetails":
+			this.add(StudentDetailsComponent.getInstance());
 			break;
 		default:
-			this.add(loginComponent.getInstance());
 		}
 
 		this.revalidate();

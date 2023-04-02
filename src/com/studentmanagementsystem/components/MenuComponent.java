@@ -36,6 +36,13 @@ public class MenuComponent extends JPanel {
 		});
 		add(loginBtn);
 		studentDetailsBtn = new JButton("Student Details");
+		studentDetailsBtn.addActionListener(new ActionListener() {
+			
+			@Override
+			public void actionPerformed(ActionEvent e) {
+				ContentComponent.getInstance().addComponent("studentDetails");
+			}
+		});
 		reportsBtn = new JButton("Staff Details");
 		staffDetailsBtn = new JButton("Reports");
 		logoutBtn = new JButton("Logout");
@@ -63,7 +70,8 @@ public class MenuComponent extends JPanel {
 			}
 		});
 		add(logoutBtn);
-		ContentComponent.getInstance().addComponent("details");
+		
+		ContentComponent.getInstance().addComponent("");
 		this.revalidate();
 		this.repaint();
 	}
