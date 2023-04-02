@@ -11,12 +11,21 @@ public class UserService {
 	
 	private static UserService userService = new UserService();
 	
+	private UserService() {
+		UserModal modal = new UserModal();
+		modal.setUserName("s");
+		modal.setPassword("s");
+		usersMap.put("s", modal);
+	}
+	
 	public static UserService getInstance() {
+		
 		return userService;
 	}
 	
 	
 	public UserModal getUserByUserName(String userName) {
+		
 		return usersMap.get(userName);
 	}
 

@@ -135,6 +135,7 @@ public class LoginComponent extends JPanel {
 						errorPassword.setVisible(false);
 						if (LoginService.getInstance().isValidUser(textField.getText(), passwordField.getText())) {
 							MenuComponent.getInstance().login();
+							LoginService.currentLoggedInUsser = textField.getText();
 							textField.setText(null);
 							passwordField.setText(null);
 

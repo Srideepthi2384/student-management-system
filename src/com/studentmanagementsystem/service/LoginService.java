@@ -5,6 +5,9 @@ import com.studentmanagementsystem.modal.UserModal;
 public class LoginService {
 	
 	
+	public static String currentLoggedInUsser= null;
+	
+	
 	private static LoginService loginService = new LoginService();
 	
 	public static LoginService getInstance() {

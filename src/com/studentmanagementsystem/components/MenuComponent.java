@@ -41,6 +41,7 @@ public class MenuComponent extends JPanel {
 			@Override
 			public void actionPerformed(ActionEvent e) {
 				ContentComponent.getInstance().addComponent("studentDetails");
+				StudentDetailsComponent.getInstance().setUser();
 			}
 		});
 		reportsBtn = new JButton("Staff Details");
